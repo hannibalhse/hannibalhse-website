@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hannibál Hegyisport Egyesület — Baráti mozgolódások alpesi környezetben. Mászás, sítúra, futás és boulder közösség.">
+  <title>Főoldal | Hannibál HSE</title>
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Hannibál HSE">
+  <meta property="og:title" content="Főoldal | Hannibál HSE">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.hannibalhse.com">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER BANNER ===== -->
+  <header class="site-header">
+    <img
+      class="banner"
+      src="/assets/images/banner-header.jpg"
+      alt="Hannibál HSE — hegyi táj"
+    >
+  </header>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="site-nav" aria-label="Főnavigáció">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo" aria-label="Főoldal">
+        <img src="/assets/images/logo.jpg" alt="Hannibál HSE logó">
+        <span>Hannibál Hegyisport Egyesület</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Menü megnyitása" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="/">Főoldal</a></li>
+        <li>
+          <span>Tevékenységek ▾</span>
+          <div class="dropdown">
+            <a href="/tev%C3%A9kenys%C3%A9gek/">Tevékenységek</a>
+            <a href="/sziklam%C3%A1sz%C3%A1s/">Sziklamászás</a>
+            <a href="/t%C3%BAras%C3%AD/">Sítúra</a>
+            <a href="/fut%C3%A1s-terepfut%C3%A1s/">Futás / Terepfutás</a>
+            <a href="/copy-of-sziklam%C3%A1sz%C3%A1s/">Boulder edzés</a>
+          </div>
+        </li>
+        <li>
+          <span>Tagság ▾</span>
+          <div class="dropdown">
+            <a href="/tagoknak/">Tagoknak</a>
+            <a href="/csatlakozn%C3%A9k/">Csatlakoznék!</a>
+          </div>
+        </li>
+        <li><a href="/blog/">Fotó esszék</a></li>
+        <li>
+          <span>Admin ▾</span>
+          <div class="dropdown">
+            <a href="/egyes%C3%BCleti-adatok/">Egyesületi adatok</a>
+            <a href="/alapszab%C3%A1ly/">Alapszabály</a>
+            <a href="/adatkezel%C3%A9s/">Adatkezelés</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="page-content">
+
+    <h2>Üdvözlünk a Hannibál HSE weboldalán!<br>
+    <span style="font-weight:400; font-size:1.1rem; color: var(--color-text-light);">Baráti mozgolódások alpesi környezetben.</span>
+    </h2>
+
+    <div class="hero-intro mt-4">
+      <div>
+        <p>A Hannibál HSE egy amatőr hegyisport egyesület, ahol vidáman megférnek egymás mellett síelők, mászók, futók, hobbisportolók, amatőr versenyzők, barátok, családtagok.</p>
+
+        <p>Weboldalunkon megismerheted a tevékenységünket, és hátha kedvet kapsz a <a href="/csatlakozn%C3%A9k/">csatlakozáshoz</a>. Számunkra az eredményeknél és a csúcsok meghódításánál sokkal fontosabb az együtt eltöltött idő!</p>
+
+        <p>Elérhetsz minket az alábbi csatornákon is:</p>
+
+        <div class="social-links">
+          <a href="https://www.facebook.com/profile.php?id=61553998644430" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.instagram.com/hannibal_hegyisport" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.strava.com/clubs/1155956" target="_blank" rel="noopener">Strava</a>
+        </div>
+
+        <p class="mt-3">Kalandjainkról <a href="/blog/">fotó esszék</a> formájában szeretünk beszámolni.</p>
+
+        <p><em>Várunk szeretettel!<br>Az elefántok</em></p>
+      </div>
+
+      <div>
+        <img
+          src="/assets/images/home-elephants.png"
+          alt="Hannibál HSE egyesületi jelvény és elefántok"
+        >
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-social">
+      <a href="https://www.facebook.com/profile.php?id=61553998644430" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.instagram.com/hannibal_hegyisport" target="_blank" rel="noopener">Instagram</a>
+    </div>
+    <p class="footer-copy">© Hannibál Hegyisport Egyesület, 2024.</p>
+  </footer>
+
+  <!-- ===== NAV TOGGLE SCRIPT ===== -->
+  <script>
+    function toggleNav() {
+      const nav = document.getElementById('nav-links');
+      nav.classList.toggle('open');
+    }
+    // Close nav when clicking outside
+    document.addEventListener('click', function(e) {
+      const nav = document.getElementById('nav-links');
+      const toggle = document.querySelector('.nav-toggle');
+      if (!nav.contains(e.target) && !toggle.contains(e.target)) {
+        nav.classList.remove('open');
+      }
+    });
+  </script>
+
+</body>
+</html>

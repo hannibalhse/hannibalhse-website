@@ -13,3 +13,7 @@
 /egyesületi-adatok /egyes%C3%BCleti-adatok/      301
 /alapszabály      /alapszab%C3%A1ly/             301
 /adatkezelés      /adatkezel%C3%A9s/             301
+
+# Boulder edzés — old Wix URL redirects to clean new URL
+/copy-of-sziklam%C3%A1sz%C3%A1s/  /boulder-edzes/  301
+/copy-of-sziklam%C3%A1sz%C3%A1s   /boulder-edzes/  301

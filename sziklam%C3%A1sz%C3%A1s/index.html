@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hannibál HSE sziklamászás — boulder, sportmászás, többkötélhossz, alpesi mászás.">
+  <title>Sziklamászás | Hannibál HSE</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-logo-bar">
+    <a href="/"><img class="logo" src="/assets/images/logo.jpg" alt="Hannibál HSE logó"></a>
+    <a href="/" class="site-title">Hannibál Hegyisport Egyesület</a>
+  </div>
+  <div class="slideshow" id="slideshow">
+    <div class="slide active"><img src="/assets/images/banner-1.jpg" alt="Hannibál HSE"></div>
+    <div class="slide"><img src="/assets/images/banner-2.jpg" alt="Hannibál HSE"></div>
+  </div>
+  <button class="slide-prev" onclick="prevSlide()" aria-label="Előző">&#8249;</button>
+  <button class="slide-next" onclick="nextSlide()" aria-label="Következő">&#8250;</button>
+</header>
+<nav class="site-nav" aria-label="Főnavigáció">
+  <div class="nav-inner">
+    <button class="nav-toggle" onclick="toggleNav()" aria-label="Menü">☰ Menü</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="/">Főoldal</a></li>
+      <li>
+        <span>Tevékenységek</span>
+        <div class="dropdown">
+          <a href="/sziklam%C3%A1sz%C3%A1s/">Sziklamászás</a>
+          <a href="/t%C3%BAras%C3%AD/">Sítúra</a>
+          <a href="/fut%C3%A1s-terepfut%C3%A1s/">Futás / Terepfutás</a>
+          <a href="/boulder-edzes/">Boulder edzés</a>
+        </div>
+      </li>
+      <li>
+        <span>Tagság</span>
+        <div class="dropdown">
+          <a href="/tags%C3%A1g/">Tagság</a>
+          <a href="/tagoknak/">Tagoknak</a>
+          <a href="/csatlakozn%C3%A9k/">Csatlakoznék!</a>
+        </div>
+      </li>
+      <li><a href="/blog/">Fotó esszék</a></li>
+      <li>
+        <span>Admin</span>
+        <div class="dropdown">
+          <a href="/egyes%C3%BCleti-adatok/">Egyesületi adatok</a>
+          <a href="/alapszab%C3%A1ly/">Alapszabály</a>
+          <a href="/adatkezel%C3%A9s/">Adatkezelés</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+<main class="page-content">
+  <h1>Hannibálok a sziklán</h1>
+  <p class="page-subtitle">Tagjaink a mesterséges és természetes fogások mindegyikét szeretik. A bouldertől, a sportutakon az alpesi többkötélhosszakig sok mindent mászunk és szeretünk.</p>
+  <div class="content-row mt-4">
+    <div class="col-img"><img src="/assets/images/sziklamaszas-boulder.jpg" alt="Boulder edzés"></div>
+    <div class="col-text">
+      <span class="section-label">Boulder</span>
+      <p>Boulderezni nagyon szeretünk, mindenféle helyszínen: teremben, Balaton-felvidéken, Franciabányán. Sőt alakulóban van egy urban boulder szakosztályunk is.</p>
+      <p>A rendszeres gravity edzések Sebővel meghozták a kiemelkedő eredményeket is, immáron minden évben a középmezőnyben végzünk az utolsó hely helyett novemberi boulder jamen, és már zöldeket is mászunk.</p>
+      <p>Az egyesület tagjai számára boulder edzéseket szervez. Erről bővebben a <a href="/boulder-edzes/">Boulder edzés oldalunkon</a>.</p>
+    </div>
+  </div>
+  <div class="content-row img-right">
+    <div class="col-text">
+      <span class="section-label">Sportmászás</span>
+      <p>Magyarország szikláit többé kevésbé bejártuk, nyaranta heti rendszerességgel edzünk a Róka-hegyen. A sok személyes kedvenc mellett talán két közös hely van, ahova mindig visszatérünk: a Dunazug sziklái közül a Mogyorósbányán találod legtöbbet az elefántokat, akik valamiért nagyon szívükbe zárták a leereszkedős kis falakat. No de az egyesületi top-top mindenképpen Sólyombérc, ahol többünk mászós karrierje kezdődött, mai napig nem egyértelműen küzdjük ki a Jégút 4-es nehézségeit, és el sem tudjuk képzelni, hogy ki mer felmenni a hátsó falon lévő 3 nittes utakban, különösen a Halálosztó Lokomotívon.</p>
+    </div>
+    <div class="col-img"><img src="/assets/images/sziklamaszas-sport.jpg" alt="Sportmászás"></div>
+  </div>
+  <div class="content-row">
+    <div class="col-img"><img src="/assets/images/sziklamaszas-tobbkotelhossz.jpg" alt="Többkötélhossz"></div>
+    <div class="col-text">
+      <span class="section-label">Többkötélhossz</span>
+      <p>Azért, ha az egyesületi core mászók a szívükre teszik a kezüket, mindenki ezt a szakágat választaná a kedvencének. Legyen szó egynapos hajnali Höllentalokról, a Gyuszi által szervezett legendás ailefroidei többkötélhosszas táborról, az évek óta nézett és minden nyáron elhalasztott Dachstein déli falról — talán mégiscsak ezek viszik fel legjobban mászóink pulzusát.</p>
+    </div>
+  </div>
+  <div class="content-row img-right">
+    <div class="col-text">
+      <span class="section-label">Alpesi / magashegyi mászás</span>
+      <p>Hát ebben azért elég kezdők vagyunk. Olivér és István 2023 nyarán kimászták a Villa-gerincet, amivel elnyerték az éves Piolet d'(Elefánt)Or díjat az egyesülettől. Volt aki sível megmászta a Gran Paradisót, meg voltunk téli magashegyi és gleccser-tanfolyamon is.</p>
+      <p>De ami késik, nem múlik! Hátha a következő szezonban már több ilyen beszámolót olvashattok a <a href="/blog/">fotó esszék</a> közt.</p>
+    </div>
+    <div class="col-img"><img src="/assets/images/sziklamaszas-alpesi.jpg" alt="Alpesi mászás"></div>
+  </div>
+</main>
+<footer class="site-footer">
+  <span class="footer-copy">© Hannibál Hegyisport Egyesület, 2024.</span>
+  <div class="footer-social">
+    <a href="https://www.facebook.com/profile.php?id=61553998644430" target="_blank" rel="noopener">Facebook</a>
+    <a href="https://www.instagram.com/hannibal_hegyisport" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</footer>
+<script>
+  let current = 0;
+  const slides = document.querySelectorAll('.slide');
+  function showSlide(n) { slides[current].classList.remove('active'); current = (n + slides.length) % slides.length; slides[current].classList.add('active'); }
+  function nextSlide() { showSlide(current + 1); }
+  function prevSlide() { showSlide(current - 1); }
+  setInterval(nextSlide, 5000);
+  function toggleNav() { document.getElementById('nav-links').classList.toggle('open'); }
+  document.addEventListener('click', function(e) { const nav = document.getElementById('nav-links'); const toggle = document.querySelector('.nav-toggle'); if (nav && toggle && !nav.contains(e.target) && !toggle.contains(e.target)) nav.classList.remove('open'); });
+</script>
+</body>
+</html>

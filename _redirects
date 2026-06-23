@@ -2,34 +2,36 @@
 # These redirect the original Wix URLs (with Hungarian characters) to the
 # new ASCII-slug folders, so any links shared on social media before the
 # migration continue to work.
+# Source paths use percent-encoded UTF-8, since Cloudflare's redirect
+# matcher is unreliable with literal non-ASCII characters in the source.
 
-/tevékenységek      /tevekenysegek/      301
-/tevékenységek/     /tevekenysegek/      301
+/tev%C3%A9kenys%C3%A9gek       /tevekenysegek/      301
+/tev%C3%A9kenys%C3%A9gek/      /tevekenysegek/      301
 
-/sziklamászás       /sziklamaszas/       301
-/sziklamászás/      /sziklamaszas/       301
+/sziklam%C3%A1sz%C3%A1s        /sziklamaszas/       301
+/sziklam%C3%A1sz%C3%A1s/       /sziklamaszas/       301
 
-/túrasí             /situra/             301
-/túrasí/            /situra/             301
+/t%C3%BAras%C3%AD              /situra/             301
+/t%C3%BAras%C3%AD/             /situra/             301
 
-/futás-terepfutás   /futas-terepfutas/   301
-/futás-terepfutás/  /futas-terepfutas/   301
+/fut%C3%A1s-terepfut%C3%A1s    /futas-terepfutas/   301
+/fut%C3%A1s-terepfut%C3%A1s/   /futas-terepfutas/   301
 
-/tagság             /tagsag/             301
-/tagság/            /tagsag/             301
+/tags%C3%A1g                   /tagsag/             301
+/tags%C3%A1g/                  /tagsag/             301
 
-/csatlakoznék       /csatlakoznek/       301
-/csatlakoznék/      /csatlakoznek/       301
+/csatlakozn%C3%A9k             /csatlakoznek/       301
+/csatlakozn%C3%A9k/            /csatlakoznek/       301
 
-/egyesületi-adatok  /egyesuleti-adatok/  301
-/egyesületi-adatok/ /egyesuleti-adatok/  301
+/egyes%C3%BCleti-adatok        /egyesuleti-adatok/  301
+/egyes%C3%BCleti-adatok/       /egyesuleti-adatok/  301
 
-/alapszabály        /alapszabaly/        301
-/alapszabály/       /alapszabaly/        301
+/alapszab%C3%A1ly              /alapszabaly/        301
+/alapszab%C3%A1ly/             /alapszabaly/        301
 
-/adatkezelés        /adatkezeles/        301
-/adatkezelés/       /adatkezeles/        301
+/adatkezel%C3%A9s              /adatkezeles/        301
+/adatkezel%C3%A9s/             /adatkezeles/        301
 
 # Boulder edzés — old Wix URL (artefact of page duplication) redirects to clean new URL
-/copy-of-sziklamászás/  /boulder-edzes/  301
-/copy-of-sziklamászás   /boulder-edzes/  301
+/copy-of-sziklam%C3%A1sz%C3%A1s/  /boulder-edzes/   301
+/copy-of-sziklam%C3%A1sz%C3%A1s   /boulder-edzes/   301

@@ -20,7 +20,7 @@
   --font-body:    'Lora', serif;
 
   --max-width: 980px;
-  --header-height: 260px;
+  --header-aspect-ratio: 980 / 310;
   --nav-height: 48px;
 }
 
@@ -36,7 +36,9 @@ img { max-width: 100%; height: auto; display: block; }
 .site-header {
   position: relative;
   width: 100%;
-  height: var(--header-height);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  aspect-ratio: var(--header-aspect-ratio);
   overflow: hidden;
   background: #222;
 }
@@ -55,11 +57,11 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .header-logo-bar img.logo {
-  width: 60px;
-  height: 60px;
+  width: 105px;
+  height: 105px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #333;
+  border: 3px solid #828282;
 }
 
 .header-logo-bar .site-title {
@@ -269,6 +271,8 @@ p { margin-bottom: 1rem; }
 
 .content-row img {
   width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
   display: block;
 }
 

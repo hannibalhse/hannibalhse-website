@@ -1,27 +1,32 @@
 /* ============================================================
-   Hannibál HSE — Global Stylesheet v0.2
+   Hannibál HSE — Global Stylesheet v0.3
+   Corrections derived from Wix source code analysis, applied
+   2026-06 (see project notes). Green accent and dark footer
+   intentionally retained per business owner decision — these
+   are deviations from the original neutral/grey Wix palette.
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
 
 /* --- CSS Variables --- */
 :root {
   --color-bg:         #ffffff;
-  --color-text:       #2d2d2d;
+  --color-text:       rgb(128, 128, 128);   /* corrected: source body text colour */
   --color-text-light: #555555;
-  --color-accent:     #1a3a2a;
-  --color-accent-mid: #2e5c3e;
-  --color-border:     #cccccc;
-  --color-nav-bg:     #ffffff;
-  --color-footer-bg:  #1c1c1c;
+  --color-accent:     #1a3a2a;               /* kept by decision — green retained */
+  --color-accent-mid: #2e5c3e;               /* kept by decision — green retained */
+  --color-border:     rgb(170, 170, 170);    /* corrected: source border colour */
+  --color-nav-bg:     rgb(250, 250, 252);    /* corrected: source nav/logo-bar bg */
+  --color-nav-text:   rgb(40, 26, 57);       /* corrected: source nav text colour */
+  --color-footer-bg:  #1c1c1c;               /* kept by decision — dark footer retained */
   --color-footer-text:#cccccc;
 
-  --font-heading: 'Raleway', sans-serif;
+  --font-heading: 'Poppins', sans-serif;     /* corrected: swapped from Raleway */
   --font-body:    'Lora', serif;
 
   --max-width: 980px;
   --header-aspect-ratio: 980 / 310;
-  --nav-height: 48px;
+  --nav-height: 45px;                         /* corrected: source nav height */
 }
 
 /* --- Reset --- */
@@ -43,17 +48,22 @@ img { max-width: 100%; height: auto; display: block; }
   background: #222;
 }
 
-/* Logo bar overlaid on top of the slideshow */
+/* Logo bar overlaid on top of the slideshow.
+   Corrected: starts 33px from the top (source: margin 33px 0px 10px),
+   not flush at top:0 — it overlaps partway down the banner. */
 .header-logo-bar {
   position: absolute;
-  top: 0; left: 0; right: 0;
+  top: 33px;
+  left: 0;
+  width: calc(100% + 21px);
   z-index: 10;
-  background: rgba(255,255,255,0.92);
+  background: rgb(250, 250, 252);
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  padding: 0.5rem 1.5rem;
-  border-bottom: 1px solid var(--color-border);
+  padding: 0.4rem 1.5rem 0.4rem 1rem;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.3);
 }
 
 .header-logo-bar img.logo {
@@ -61,14 +71,14 @@ img { max-width: 100%; height: auto; display: block; }
   height: 105px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #828282;
+  border: 3px solid rgb(128, 128, 128); /* corrected: exact source border colour */
 }
 
 .header-logo-bar .site-title {
   font-family: var(--font-heading);
   font-size: 1.5rem;
   font-weight: 700;
-  color: #111;
+  color: rgb(40, 26, 57); /* corrected: matches source title text colour */
   text-decoration: none;
 }
 
@@ -161,8 +171,8 @@ img { max-width: 100%; height: auto; display: block; }
   height: var(--nav-height);
   font-family: var(--font-heading);
   font-size: 0.82rem;
-  font-weight: 600;
-  color: var(--color-text);
+  font-weight: 700;                 /* corrected: source nav font is bold */
+  color: var(--color-nav-text);     /* corrected: source nav text colour */
   text-transform: none;
   letter-spacing: 0.01em;
   cursor: pointer;
@@ -175,8 +185,8 @@ img { max-width: 100%; height: auto; display: block; }
 .nav-links > li > a:hover,
 .nav-links > li > span:hover,
 .nav-links > li.active > a {
-  background: #f5f5f5;
-  color: var(--color-text);
+  background: var(--color-nav-bg);
+  color: rgb(85, 85, 85);           /* corrected: source nav hover text colour */
   text-decoration: none;
 }
 
@@ -185,7 +195,7 @@ img { max-width: 100%; height: auto; display: block; }
   position: absolute;
   top: var(--nav-height);
   left: 0;
-  background: #ffffff;
+  background: var(--color-nav-bg);
   border: 1px solid var(--color-border);
   min-width: 180px;
   display: none;
@@ -200,16 +210,16 @@ img { max-width: 100%; height: auto; display: block; }
   padding: 0.55rem 1rem;
   font-family: var(--font-heading);
   font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--color-text);
+  font-weight: 700;
+  color: var(--color-nav-text);
   text-decoration: none;
   text-align: left;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--color-border);
   transition: background 0.15s;
 }
 
 .nav-links .dropdown a:last-child { border-bottom: none; }
-.nav-links .dropdown a:hover { background: #f5f5f5; }
+.nav-links .dropdown a:hover { color: rgb(85, 85, 85); }
 
 /* Mobile hamburger */
 .nav-toggle {
@@ -221,7 +231,7 @@ img { max-width: 100%; height: auto; display: block; }
   font-family: var(--font-heading);
   font-size: 0.85rem;
   font-weight: 700;
-  color: var(--color-text);
+  color: var(--color-nav-text);
   width: 100%;
   text-align: left;
 }
@@ -233,16 +243,21 @@ img { max-width: 100%; height: auto; display: block; }
   padding: 2.5rem 1.5rem 4rem;
 }
 
-/* ===== TYPOGRAPHY ===== */
+/* ===== TYPOGRAPHY =====
+   Corrected: heading colour now uses the source's dark grey
+   (rgb(85,85,85)) rather than near-black, EXCEPT --color-accent
+   which is intentionally retained as green per business decision.
+   Headings below use --color-accent (green) for visual identity,
+   while body greys come from --color-text. */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   font-weight: 700;
   line-height: 1.25;
-  color: var(--color-text);
+  color: var(--color-accent);
 }
 
 h1 { font-size: 1.9rem; margin-bottom: 0.25rem; }
-h2 { font-size: 1.5rem; margin-bottom: 0.25rem; }
+h2 { font-size: 1.75rem; margin-bottom: 0.25rem; } /* corrected: source homepage title is 28px */
 h3 { font-size: 1.15rem; margin-bottom: 0.75rem; }
 h5, h6 { font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--color-text-light); margin-bottom: 0.4rem; }
 
@@ -256,22 +271,25 @@ p { margin-bottom: 1rem; }
   margin-bottom: 2rem;
 }
 
-/* ===== TWO-COLUMN CONTENT ROW ===== */
+/* ===== TWO-COLUMN CONTENT ROW =====
+   Corrected: source homepage image slot is 316x421 (~3:4 portrait),
+   not 4:3 landscape. Column split corrected to roughly 38/62
+   (316:515) to match source measurements. */
 .content-row {
   display: grid;
-  grid-template-columns: 5fr 6fr;
+  grid-template-columns: 38fr 62fr;
   gap: 2rem;
   align-items: start;
   margin-bottom: 2.5rem;
 }
 
 .content-row.img-right {
-  grid-template-columns: 6fr 5fr;
+  grid-template-columns: 62fr 38fr;
 }
 
 .content-row img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 3 / 4;     /* corrected: portrait, was 4/3 landscape */
   object-fit: cover;
   display: block;
 }
@@ -449,7 +467,9 @@ hr.section-divider {
   margin: 2rem 0;
 }
 
-/* ===== FOOTER ===== */
+/* ===== FOOTER =====
+   Kept dark per business decision — source Wix footer is white,
+   but the dark footer is retained intentionally here. */
 .site-footer {
   background: var(--color-footer-bg);
   color: var(--color-footer-text);
@@ -522,7 +542,7 @@ hr.section-divider {
     position: static;
     border: none;
     box-shadow: none;
-    background: #f8f8f8;
+    background: var(--color-nav-bg);
     display: block;
   }
 

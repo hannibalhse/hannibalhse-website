@@ -1,19 +1,35 @@
 # Hannibál HSE — Cloudflare Pages redirect rules
-# Cloudflare Pages serves index.html from folders automatically,
-# so clean URLs (/blog/ → /blog/index.html) work natively.
-# This file handles any edge cases and legacy redirects.
+# These redirect the original Wix URLs (with Hungarian characters) to the
+# new ASCII-slug folders, so any links shared on social media before the
+# migration continue to work.
 
-# Ensure trailing-slash canonical URLs
-/tevékenységek    /tev%C3%A9kenys%C3%A9gek/    301
-/sziklamászás     /sziklam%C3%A1sz%C3%A1s/      301
-/túrasí           /t%C3%BAras%C3%AD/             301
-/futás-terepfutás /fut%C3%A1s-terepfut%C3%A1s/  301
-/tagság           /tags%C3%A1g/                   301
-/csatlakoznék     /csatlakozn%C3%A9k/            301
-/egyesületi-adatok /egyes%C3%BCleti-adatok/      301
-/alapszabály      /alapszab%C3%A1ly/             301
-/adatkezelés      /adatkezel%C3%A9s/             301
+/tevékenységek      /tevekenysegek/      301
+/tevékenységek/     /tevekenysegek/      301
 
-# Boulder edzés — old Wix URL redirects to clean new URL
-/copy-of-sziklam%C3%A1sz%C3%A1s/  /boulder-edzes/  301
-/copy-of-sziklam%C3%A1sz%C3%A1s   /boulder-edzes/  301
+/sziklamászás       /sziklamaszas/       301
+/sziklamászás/      /sziklamaszas/       301
+
+/túrasí             /situra/             301
+/túrasí/            /situra/             301
+
+/futás-terepfutás   /futas-terepfutas/   301
+/futás-terepfutás/  /futas-terepfutas/   301
+
+/tagság             /tagsag/             301
+/tagság/            /tagsag/             301
+
+/csatlakoznék       /csatlakoznek/       301
+/csatlakoznék/      /csatlakoznek/       301
+
+/egyesületi-adatok  /egyesuleti-adatok/  301
+/egyesületi-adatok/ /egyesuleti-adatok/  301
+
+/alapszabály        /alapszabaly/        301
+/alapszabály/       /alapszabaly/        301
+
+/adatkezelés        /adatkezeles/        301
+/adatkezelés/       /adatkezeles/        301
+
+# Boulder edzés — old Wix URL (artefact of page duplication) redirects to clean new URL
+/copy-of-sziklamászás/  /boulder-edzes/  301
+/copy-of-sziklamászás   /boulder-edzes/  301

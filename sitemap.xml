@@ -8,25 +8,25 @@
   </url>
 
   <url>
-    <loc>https://www.hannibalhse.com/tev%C3%A9kenys%C3%A9gek/</loc>
+    <loc>https://www.hannibalhse.com/tevekenysegek/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.hannibalhse.com/sziklam%C3%A1sz%C3%A1s/</loc>
+    <loc>https://www.hannibalhse.com/sziklamaszas/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.hannibalhse.com/t%C3%BAras%C3%AD/</loc>
+    <loc>https://www.hannibalhse.com/situra/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.hannibalhse.com/fut%C3%A1s-terepfut%C3%A1s/</loc>
+    <loc>https://www.hannibalhse.com/futas-terepfutas/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -38,7 +38,7 @@
   </url>
 
   <url>
-    <loc>https://www.hannibalhse.com/tags%C3%A1g/</loc>
+    <loc>https://www.hannibalhse.com/tagsag/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -50,7 +50,7 @@
   </url>
 
   <url>
-    <loc>https://www.hannibalhse.com/csatlakozn%C3%A9k/</loc>
+    <loc>https://www.hannibalhse.com/csatlakoznek/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -62,19 +62,19 @@
   </url>
 
   <url>
-    <loc>https://www.hannibalhse.com/egyes%C3%BCleti-adatok/</loc>
+    <loc>https://www.hannibalhse.com/egyesuleti-adatok/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
-    <loc>https://www.hannibalhse.com/alapszab%C3%A1ly/</loc>
+    <loc>https://www.hannibalhse.com/alapszabaly/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
 
   <url>
-    <loc>https://www.hannibalhse.com/adatkezel%C3%A9s/</loc>
+    <loc>https://www.hannibalhse.com/adatkezeles/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>

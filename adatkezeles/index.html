@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-
 <header class="site-header">
   <div class="header-logo-bar">
     <a href="/"><img class="logo" src="/assets/images/logo.jpg" alt="Hannibál HSE logó"></a>
@@ -21,7 +20,6 @@
   <button class="slide-prev" onclick="prevSlide()" aria-label="Előző">&#8249;</button>
   <button class="slide-next" onclick="nextSlide()" aria-label="Következő">&#8250;</button>
 </header>
-
 <nav class="site-nav" aria-label="Főnavigáció">
   <div class="nav-inner">
     <button class="nav-toggle" onclick="toggleNav()" aria-label="Menü">☰ Menü</button>
@@ -30,40 +28,37 @@
       <li>
         <span>Tevékenységek</span>
         <div class="dropdown">
-          <a href="/sziklam%C3%A1sz%C3%A1s/">Sziklamászás</a>
-          <a href="/t%C3%BAras%C3%AD/">Sítúra</a>
-          <a href="/fut%C3%A1s-terepfut%C3%A1s/">Futás / Terepfutás</a>
+          <a href="/sziklamaszas/">Sziklamászás</a>
+          <a href="/situra/">Sítúra</a>
+          <a href="/futas-terepfutas/">Futás / Terepfutás</a>
           <a href="/boulder-edzes/">Boulder edzés</a>
         </div>
       </li>
       <li>
         <span>Tagság</span>
         <div class="dropdown">
-          <a href="/tags%C3%A1g/">Tagság</a>
+          <a href="/tagsag/">Tagság</a>
           <a href="/tagoknak/">Tagoknak</a>
-          <a href="/csatlakozn%C3%A9k/">Csatlakoznék!</a>
+          <a href="/csatlakoznek/">Csatlakoznék!</a>
         </div>
       </li>
       <li><a href="/blog/">Fotó esszék</a></li>
       <li>
         <span>Admin</span>
         <div class="dropdown">
-          <a href="/egyes%C3%BCleti-adatok/">Egyesületi adatok</a>
-          <a href="/alapszab%C3%A1ly/">Alapszabály</a>
-          <a href="/adatkezel%C3%A9s/">Adatkezelés</a>
+          <a href="/egyesuleti-adatok/">Egyesületi adatok</a>
+          <a href="/alapszabaly/">Alapszabály</a>
+          <a href="/adatkezeles/">Adatkezelés</a>
         </div>
       </li>
     </ul>
   </div>
 </nav>
-
 <main class="page-content">
   <h1>Adatkezelés</h1>
-
   <div class="legal-content mt-4">
     <h2>Adatvédelmi tájékoztató célja</h2>
     <p>A tájékoztató célja, hogy információt adjunk adatkezelési alapelveinkről, a kezelt személyes adataid köréről és ezzel kapcsolatos jogaidról.</p>
-
     <h2>Adatkezelési alapelveink</h2>
     <ul>
       <li>Személyes adataidat jogszerűen, tisztességesen és átláthatóan kezeljük.</li>
@@ -74,7 +69,6 @@
       <li>Minden észszerű intézkedést megteszünk annak érdekében, hogy az általunk kezelt adatok pontosak és szükség esetén naprakészek legyenek.</li>
       <li>Megfelelő technikai és szervezési intézkedések alkalmazásával biztosítjuk a személyes adatok megfelelő biztonságát.</li>
     </ul>
-
     <h2>A Te jogaid</h2>
     <p>A kezelt adatok köréről (mit gyűjtünk), forrásáról (honnan származik az információ), az adatkezelés céljáról (miért van rá szükségünk), jogalapjáról (milyen jogi alapon kezeljük) bármikor tájékoztatást kérhetsz tőlünk.</p>
     <ul>
@@ -85,16 +79,13 @@
     <p>Ha adataidat nem megfelelően kezeljük, bíróság előtt jogorvoslattal élhetsz, illetve a felügyelő hatóságnál panaszt tehetsz, eljárást kezdeményezhetsz (<a href="https://naih.hu/panaszuegyintezes-rendje.html" target="_blank" rel="noopener">https://naih.hu</a>).</p>
     <p>Kérünk, amennyiben azt tapasztalod, hogy adataidat nem a megfelelő módon kezeltük, minden esetben először minket keress meg a <a href="mailto:hannibalhse@gmail.com">hannibalhse@gmail.com</a>-on keresztül, ahol a panaszkezelésen túl az összes felsorolt adatkezelési jogodat is érvényesítheted.</p>
     <p>Az e-mailedre beérkezésétől számítva legfeljebb 1 hónapon belül választ adunk neked, melyet csak törvényben foglalt esetekben tagadhatunk meg.</p>
-
     <h2>Milyen személyes adatokat tárolunk?</h2>
     <p>A weboldalunk cookie-kat használ, így ha már itt jársz, akkor az alábbi adatokat: IP cím, látogatás időpontja, meglátogatott oldalak adatai, böngésző típusa.</p>
     <p>Ha tagunk vagy, tagnak jelentkezel, akkor az alábbi adatokat: név, születési név, email cím, lakcím (számlázási cím).</p>
-
     <h2>Kapcsolatfelvétel</h2>
     <p>Ha kérdésed van az adatkezelésünkkel kapcsolatban, adatkezelési jogaid valamelyikét szeretnéd érvényesíteni vagy panaszt tennél, várjuk e-mailedet a <a href="mailto:hannibalhse@gmail.com">hannibalhse@gmail.com</a>-on.</p>
   </div>
 </main>
-
 <footer class="site-footer">
   <span class="footer-copy">© Hannibál Hegyisport Egyesület, 2024.</span>
   <div class="footer-social">
@@ -102,7 +93,6 @@
     <a href="https://www.instagram.com/hannibal_hegyisport" target="_blank" rel="noopener">Instagram</a>
   </div>
 </footer>
-
 <script>
   let current = 0;
   const slides = document.querySelectorAll('.slide');

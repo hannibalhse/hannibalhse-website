@@ -49,36 +49,43 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 /* Logo bar overlaid on top of the slideshow.
-   Corrected: starts 33px from the top (source: margin 33px 0px 10px),
-   not flush at top:0 — it overlaps partway down the banner. */
+   Corrected: box starts 33px from top, sized ONLY to its text content
+   (not the logo). The logo is positioned independently (15px from
+   header top) and is taller than the box, so it overflows below the
+   box's bottom edge onto the banner image directly — matching the
+   source site, where the box is shorter than the logo. */
 .header-logo-bar {
   position: absolute;
   top: 33px;
   left: 0;
   width: calc(100% + 21px);
-  z-index: 10;
+  z-index: 5;
   background: rgb(250, 250, 252);
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  padding: 0.4rem 1.5rem 0.4rem 1rem;
+  padding: 0.5rem 1.5rem 0.5rem 9rem;
   border: 1px solid var(--color-border);
   box-shadow: 0 1px 4px rgba(0,0,0,0.3);
 }
 
 .header-logo-bar img.logo {
+  position: absolute;
+  top: -18px;
+  left: 15px;
   width: 105px;
   height: 105px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid rgb(128, 128, 128); /* corrected: exact source border colour */
+  border: 3px solid rgb(128, 128, 128);
+  z-index: 10;
+  background: #fff;
 }
 
 .header-logo-bar .site-title {
   font-family: var(--font-heading);
   font-size: 1.5rem;
   font-weight: 700;
-  color: rgb(40, 26, 57); /* corrected: matches source title text colour */
+  color: rgb(40, 26, 57);
   text-decoration: none;
 }
 

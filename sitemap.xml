@@ -85,4 +85,34 @@
     <priority>0.6</priority>
   </url>
 
+  <url>
+    <loc>https://www.hannibalhse.hu/post/vad-szel-a-hochwildstelle-gerincen-2024/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.hannibalhse.hu/post/steinerweg-istallogozbol/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.hannibalhse.hu/post/villa-gerinc-2023/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.hannibalhse.hu/post/grintovec-2022-februar/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.hannibalhse.hu/post/sufferfest-a-mont-blanc-on/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>

@@ -79,4 +79,10 @@
     <priority>0.4</priority>
   </url>
 
+  <url>
+    <loc>https://www.hannibalhse.hu/post/val-di-sole-es-dolomitok-2023-december/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>

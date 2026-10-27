@@ -1,5 +1,5 @@
 /* ============================================================
-   Hannibál HSE — Global Stylesheet v0.3
+   Hannibál HSE — Global Stylesheet v0.4
    Corrections derived from Wix source code analysis, applied
    2026-06 (see project notes). Green accent and dark footer
    intentionally retained per business owner decision — these
@@ -565,3 +565,68 @@ hr.section-divider {
 .mt-4 { margin-top: 2rem; }
 .mb-2 { margin-bottom: 1rem; }
 .mb-4 { margin-bottom: 2rem; }
+
+/* ===== BLOG POST (added v0.4, 2026-10-27) =====
+   Single reading column (~720px) centred inside the 980px page.
+   Landscape photos fill the column; portrait photos and videos are
+   capped at 85% of the screen height and centred. No lightbox (backlog). */
+.post {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.post h1 { margin-bottom: 0.5rem; }
+
+.post-meta {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-text-light);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.post-cover { margin: 0 0 2rem; }
+.post-cover img { width: 100%; height: auto; }
+
+.post-body h2 {
+  font-size: 1.35rem;
+  margin: 2.25rem 0 0.75rem;
+}
+
+.post-body ul,
+.post-body ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.post-body li { margin-bottom: 0.35rem; }
+
+.post-figure { margin: 1.75rem 0; }
+
+.post-figure img,
+.post-figure video {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 85vh;
+  margin: 0 auto;
+}
+
+.post-figure video { background: #000; }
+
+.post-figure figcaption {
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--color-text-light);
+  margin-top: 0.45rem;
+  text-align: center;
+}
+
+.post-back {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+}

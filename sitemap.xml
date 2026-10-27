@@ -2,79 +2,79 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://www.hannibalhse.com/</loc>
+    <loc>https://www.hannibalhse.hu/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://www.hannibalhse.com/tevekenysegek/</loc>
+    <loc>https://www.hannibalhse.hu/tevekenysegek/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.hannibalhse.com/sziklamaszas/</loc>
+    <loc>https://www.hannibalhse.hu/sziklamaszas/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.hannibalhse.com/situra/</loc>
+    <loc>https://www.hannibalhse.hu/situra/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.hannibalhse.com/futas-terepfutas/</loc>
+    <loc>https://www.hannibalhse.hu/futas-terepfutas/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.hannibalhse.com/boulder-edzes/</loc>
+    <loc>https://www.hannibalhse.hu/boulder-edzes/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.hannibalhse.com/tagsag/</loc>
+    <loc>https://www.hannibalhse.hu/tagsag/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.hannibalhse.com/tagoknak/</loc>
+    <loc>https://www.hannibalhse.hu/tagoknak/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.hannibalhse.com/csatlakoznek/</loc>
+    <loc>https://www.hannibalhse.hu/csatlakoznek/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.hannibalhse.com/blog/</loc>
+    <loc>https://www.hannibalhse.hu/blog/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.hannibalhse.com/egyesuleti-adatok/</loc>
+    <loc>https://www.hannibalhse.hu/egyesuleti-adatok/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
-    <loc>https://www.hannibalhse.com/alapszabaly/</loc>
+    <loc>https://www.hannibalhse.hu/alapszabaly/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
 
   <url>
-    <loc>https://www.hannibalhse.com/adatkezeles/</loc>
+    <loc>https://www.hannibalhse.hu/adatkezeles/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>

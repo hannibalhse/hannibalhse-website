@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.hannibalhse.com/sitemap.xml
+Sitemap: https://www.hannibalhse.hu/sitemap.xml

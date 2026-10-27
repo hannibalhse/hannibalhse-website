@@ -1,0 +1,14 @@
+// Hannibál HSE — Cloudflare Worker configuration (static site)
+// Version: 0.1 (draft, 2026-10-27)
+// Purpose: serve the site's static files and return /404.html with HTTP 404
+//          for any address that does not match a file.
+// The "name" must stay identical to the Worker name in the Cloudflare dashboard.
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "hannibalhse",
+  "compatibility_date": "2026-10-27",
+  "assets": {
+    "directory": ".",
+    "not_found_handling": "404-page"
+  }
+}
